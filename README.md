@@ -15,6 +15,7 @@ scrapy startproject helloworld
 cd helloworld
 scrapy crawl sina_news
 scrapy runspider learning2.py
+scrapy runspider learning3.py -o learning3.json
 ```
 
 > parse
@@ -63,4 +64,9 @@ scrapy crawl blog -o items.json
 >>> response.css('h2.blog-post-title > a::attr(href)').extract()
 'http://xushikuan.com/2019/03/01/learning-python-02/'
 >>> 
+```
+
+> json.loads
+```
+data = json.loads(response.text)
 ```
