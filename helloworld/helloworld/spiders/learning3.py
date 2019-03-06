@@ -2,7 +2,7 @@ import scrapy
 
 
 class SinaNewsSpider(scrapy.Spider):
-    name = 'blog-2'
+    name = 'blog-3'
     allowed_domains = ["xushikuan.com"]
     start_urls = [
         'http://xushikuan.com/'

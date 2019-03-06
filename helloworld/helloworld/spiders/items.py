@@ -8,7 +8,7 @@
 import scrapy
 
 
-class WordItemddddd(scrapy.Item):
+class WordItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field

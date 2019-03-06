@@ -10,6 +10,17 @@ pip install scrapy
 scrapy startproject helloworld
 ```
 
+> python3 scrapy path
+```
+/Library/Frameworks/Python.framework/Versions/3.7/bin/
+```
+
+> debug
+```
+/Library/Frameworks/Python.framework/Versions/3.7/bin/scrapy
+crawl get-world-detail -o getworddetail.json
+```
+
 > start
 ```
 cd helloworld
