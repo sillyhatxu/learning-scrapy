@@ -6,74 +6,111 @@ body = """
       <title>Scrapy Tutorial By Cookie</title>
    </head>
    <body>
-      <div class='links'>
+      <div class='links-div' name='div-name1'>This is div</div>
+      <p>This is PPPPPPPP</p>
+      <div class='links' name='div-name2'>
          <a href='one.html'>Link 1<img src='image1.jpg'/></a>
          <a href='two.html'>Link 2<img src='image2.jpg'/></a>
          <a href='three.html'>Link 3<img src='image3.jpg'/></a>
+         <div class='div-1'>This is div1 div1 div1</div>
       </div>
-      <div class="body">
-        <figure name="content-name" id="content-id" class="content content--figure">
-            <div class="div1">
-                <div class="div1-1"></div>
-                <div class="div1-2">
-                    <img src="https://cdn-images-1.medium.com/freeze/max/30/1*qmHZVxZmPP9w5iMqN7GWMw.jpeg?q=20">
-                    <canvas class="canvas"></canvas>
-                    <img src="https://cdn-images-1.medium.com/max/800/1*qmHZVxZmPP9w5iMqN7GWMw.jpeg">
-                    <noscript src="https://cdn-images-1.medium.com/max/800/1*qmHZVxZmPP9w5iMqN7GWMw.jpeg"></noscript>
-                </div>
-            </div>
-        </figure>
-        <h1 name="content-title-name" id="content-title-id" class="content content-h1">sync.RWMutex</h1>
-        <h2 name="content-subtitle-id" id="content-subtitle-id" class="content content-h2">Solving readers-writers problems</h2>
-        <div class="div2">
-            <div class="div-author">
-    
-            </div>
+      <ul class="postList">
+        <li name="aaa-aaa" id="aaa">writers cannot be starved</li>
+        <li name="bbb-bbb" id="bbb">readers cannot be starved</li>
+        <li name="ccc-ccc" id="ccc">no thread shall be allowed to starve</li>
+        <li><a href='xxx1.html'>xxx-content-1</a></li>
+        <li><a href='xxx2.html'>xxx-content-2</a></li>
+        <div class='links' name='div-name3'>
+            <a href='six.html'>Link 6</a>
+            <a href='seven.html' name='a-h-name'>Link 7</a>
+            <a href='eight.html'>Link 8</a>
+            <li><a href='nine.html'>Link 9</a></li>
         </div>
-        <p name="content-p-name" id="content-p-id" class="content content-p-graf">Readers-writers problems (plural since there’re some
-            variations) occur when shared piece of data needs to be accessed by multiple threads. There’re two types of
-            threads accessing data&#8202;—&#8202;readers and writers. Readers only read data and writers modify it. When
-            writer has access to data then none other thread (reader or writer) can share such access. This constraint takes
-            place in real life when e.g writer cannot modify data (like database) in atomic way so reading incomplete
-            changes must be blocked to prevent loading corrupted data. There’re many modifications of the core problem
-            like:</p>
-        <pre name="content-pre1-name" id="content-pre1-id" class="content content-pre">W</pre>
-        <pre name="content-pre2-name" id="content-pre2-id" class="content content-pre">R<br>RR<br>RRR<br>RRRR<br>RRRRR<br>RRRR<br>RRR<br>RRRR<br>RRR<br>RR<br>R</pre>
-        <ul class="content content-ul">
-            <li name="88b2" id="88b2" class="content content-li">writers cannot be starved (waiting indefinitely for their turn)</li>
-            <li name="bc29" id="bc29" class="content content-li">readers cannot be starved</li>
-            <li name="15de" id="15de" class="content content-li">no thread shall be allowed to starve</li>
-        </ul>
-        <h3 name="dbbd" id="dbbd" class="graf graf--h3 graf-after--p">Usage</h3>
-        <blockquote name="blockquote" id="blockquote" class="content content-blockquote">Environment of programs launched on
-            play.golang.org is deterministic (e.g. when time begins) so <code class="markup--code markup--blockquote-code">rand.Seed(time.Now().Unix())</code>
-            will provide the same seed value and the program’s output will be most likely the same. Either put different
-            seed each time or run program on your machine.
-        </blockquote>
-        <figure name="b01c" id="b01c" class="graf graf--figure graf-after--h3">
-            <div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 328px;">
-                <div class="aspectRatioPlaceholder-fill" style="padding-bottom: 46.9%;"></div>
-                <div class="progressiveMedia js-progressiveMedia graf-image is-canvasLoaded"
-                     data-image-id="1*Gg_vmyWlU35r3w_L4r4SYw.jpeg" data-width="1280" data-height="600" data-action="zoom"
-                     data-action-value="1*Gg_vmyWlU35r3w_L4r4SYw.jpeg" data-scroll="native"><img
-                        src="https://cdn-images-1.medium.com/freeze/max/30/1*Gg_vmyWlU35r3w_L4r4SYw.jpeg?q=20"
-                        crossorigin="anonymous" class="progressiveMedia-thumbnail js-progressiveMedia-thumbnail">
-                    <canvas class="progressiveMedia-canvas js-progressiveMedia-canvas" width="75" height="35"></canvas>
-                    <img class="progressiveMedia-image js-progressiveMedia-image"
-                         data-src="https://cdn-images-1.medium.com/max/800/1*Gg_vmyWlU35r3w_L4r4SYw.jpeg">
-                    <noscript class="js-progressiveMedia-inner"><img
-                            class="progressiveMedia-noscript js-progressiveMedia-inner"
-                            src="https://cdn-images-1.medium.com/max/800/1*Gg_vmyWlU35r3w_L4r4SYw.jpeg"></noscript>
-                </div>
-            </div>
-        </figure>
-    </div>
+        <li><a href='xxx3.html'>xxx-content-3</a></li>
+        <li><a href='xxx4.html'>xxx-content-4</a></li>
+        <li><a href='xxx5.html'>xxx-content-5</a></li>
+        <li><a href='xxx6.html'>xxx-content-6</a></li>
+        <li><a href='xxx7.html'>xxx-content-7</a></li>
+      </ul>
    </body>
 </html>
 """
 
+# nodename	Selects all nodes with the name "nodename"
+# /	        Selects from the root node
+# //	    Selects nodes in the document from the current node that match the selection no matter where they are
+# .	        Selects the current node
+# ..	    Selects the parent of the current node
+# @	        Selects attributes
+# *	        匹配任何元素节点
+# *@	    匹配任何属性节点
+# |	        //book/title | //book/price 选取book所有title和price元素
 selector = Selector(text=body)
 
-tag_value = selector.xpath("//title/text()").extract()  # 从整个页面中搜索
-print(tag_value) # Get <title>Scrapy Tutorial By Cookie</title>
 
+# 找出 <ul> 下所有的 <li> 的兄弟节点
+tag_value = selector.xpath("//ul/child::li").extract()
+print('selector.xpath("/html/body/div").extract() : ')
+for index, tag in enumerate(tag_value):
+    print(index, tag)
+# 0 <li name="aaa-aaa" id="aaa">writers cannot be starved</li>
+# 1 <li name="bbb-bbb" id="bbb">readers cannot be starved</li>
+# 2 <li name="ccc-ccc" id="ccc">no thread shall be allowed to starve</li>
+# 3 <li><a href="xxx1.html">xxx-content-1</a></li>
+# 4 <li><a href="xxx2.html">xxx-content-2</a></li>
+# 5 <li><a href="xxx3.html">xxx-content-3</a></li>
+# 6 <li><a href="xxx4.html">xxx-content-4</a></li>
+# 7 <li><a href="xxx5.html">xxx-content-5</a></li>
+# 8 <li><a href="xxx6.html">xxx-content-6</a></li>
+# 9 <li><a href="xxx7.html">xxx-content-7</a></li>#
+print("--------------------------------------------------------------------------------------------------------------")
+
+
+# 找出 <ul> 下所有的 子节点
+tag_value = selector.xpath("//ul/child::*").extract()
+for index, tag in enumerate(tag_value):
+    print(index, tag)
+# 0 <li name="aaa-aaa" id="aaa">writers cannot be starved</li>
+# 1 <li name="bbb-bbb" id="bbb">readers cannot be starved</li>
+# 2 <li name="ccc-ccc" id="ccc">no thread shall be allowed to starve</li>
+# 3 <li><a href="xxx1.html">xxx-content-1</a></li>
+# 4 <li><a href="xxx2.html">xxx-content-2</a></li>
+# 5 <div class="links" name="div-name3">
+#       <a href="six.html">Link 6</a>
+#       <a href="seven.html" name="a-h-name">Link 7</a>
+#       <a href="eight.html">Link 8</a>
+#       <li><a href="nine.html">Link 9</a></li>
+#   </div>
+# 6 <li><a href="xxx3.html">xxx-content-3</a></li>
+# 7 <li><a href="xxx4.html">xxx-content-4</a></li>
+# 8 <li><a href="xxx5.html">xxx-content-5</a></li>
+# 9 <li><a href="xxx6.html">xxx-content-6</a></li>
+# 10 <li><a href="xxx7.html">xxx-content-7</a></li>
+print("--------------------------------------------------------------------------------------------------------------")
+
+# 找出 <div name='div-name2'> 下所有的 子元素,包括 换行符
+tag_value = selector.xpath("//div[@name='div-name2']/node()").extract()
+for index, tag in enumerate(tag_value):
+    print(index, tag)
+# 0   这里其实有换行符
+# 1 <a href="one.html">Link 1<img src="image1.jpg"></a>
+# 2   这里其实有换行符
+# 3 <a href="two.html">Link 2<img src="image2.jpg"></a>
+# 4   这里其实有换行符
+# 5 <a href="three.html">Link 3<img src="image3.jpg"></a>
+# 6   这里其实有换行符
+# 7 <div class="div-1">This is div1 div1 div1</div>
+# 8   这里其实有换行符
+print("--------------------------------------------------------------------------------------------------------------")
+
+# 取出 <div name='div-name2'> 子元素所有内容,其中 string(.) 这个一定要单独拿出来写,否则报错
+tag_value = selector.xpath("//div[@name='div-name2']")
+print(tag_value.xpath("string(.)").extract())
+# print -> ['\n         Link 1\n         Link 2\n         Link 3\n         This is div1 div1 div1\n      ']
+print("--------------------------------------------------------------------------------------------------------------")
+
+
+# 取出 <div name='div-name2'> 这个元素的name -> div
+tag_value = selector.xpath("//div[@name='div-name2']")
+print(tag_value.xpath("name()").extract())  # print ['div']
+print("--------------------------------------------------------------------------------------------------------------")
